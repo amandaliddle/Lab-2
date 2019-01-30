@@ -9,8 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Team Question
-Overall Question: (exersice, gender, and weight). What are the health differences between different ages and genders?
-Why it is important: 
+Overall Question: (exersice, gender, and age). What are the health differences between different ages and genders?
+Why it is important: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healtheir life, we first need to see the differences between different ages' exersice habbits.
 Graph
 Findings:
 Recomendations:
