@@ -1,0 +1,27 @@
+---
+title: "Lab 3"
+author: "Data Me Pls""
+date: "1/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Team Question
+Overall Question: (exersice, gender, and weight). What are the health differences between different ages and genders?
+Why it is important: 
+Graph
+Findings:
+Recomendations:
+
+## General Health and Gender (James)
+
+## Weight and Weight Desire (Amanda)
+
+## Smoke and Age (Chris)
+
+## General Health and Health Plan (Anna)
+I used the geom_count() function to plot the genhlth and hlthplan variables. I chose to use this plot because the data only contained 10 unique options (hlthplan, although represented numerically, only had two responses). By grouping the same points together, one can better see the relationship between an assessment of general health and whether or not an individual has a health plan or not. 
+
+To better represent this data, I found a way to both aesthetically mark the ammount of individuals represented in a data point by color and size. (I also renamed the legend to better represent the data). 
