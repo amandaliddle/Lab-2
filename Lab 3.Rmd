@@ -1,22 +1,26 @@
 ---
 title: "Lab 3"
-author: "Data Me Pls""
+author: "Data Me Pls"
 date: "1/30/2019"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
 ```
 ## Team Question
-Overall Question: (exersice, gender, and age). What are the health differences between different ages and genders?
-Why it is important: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healtheir life, we first need to see the differences between different ages' exersice habbits. This will help us make recomendations to both parents of children and health care providers to help increase the overall health of all people.
+__Overall Question__: What are the differences between different ages and genders in amount of exercise per month?
 
-Findings:
-```{r setup, include=FALSE}
-ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
-```
-Recomendations:
+__Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healtheir life, we first need to see the differences between different ages' exersice habbits. This will help us make recomendations to both parents of children and health care providers to help increase the overall health of all people.
+
+__Findings__:
+![Our Group Plot](Plot/age_vs_exercise.png)
+
+ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+
+labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
+
+__Recomendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large amount of people, particuarly around the ages of 30-45, who do not exersice. From this finding, we recomend for docters and general practitioners to focus on individuals within that age range in order to increase the number of people who exersice. 
 
 ## General Health and Gender (James)
 
@@ -25,6 +29,14 @@ Recomendations:
 ## Smoke and Age (Chris)
 
 ## General Health and Health Plan (Anna)
+![Anna's Plot](Plot/Anna's Plot.png) 
+
+ggplot(data=cdc,aes(x=hlthplan,y=genhlth))+
+      geom_count(aes(color=..n..))+
+      labs(x='Health Plan', y='General Helth', title= 'Health Plan and General    Health',color='People')+
+      scale_x_continuous(breaks=c(0,1),labels=c('No','Yes'))
+
 I used the geom_count() function to plot the genhlth and hlthplan variables. I chose to use this plot because the data only contained 10 unique options (hlthplan, although represented numerically, only had two responses). By grouping the same points together, one can better see the relationship between an assessment of general health and whether or not an individual has a health plan or not. 
 
-To better represent this data, I found a way to both aesthetically mark the ammount of individuals represented in a data point by color and size. (I also renamed the legend to better represent the data). 
+To better represent this data, I found a way to both aesthetically mark the ammount of individuals represented in a data point by color and size. I also renamed the legend to better label the data. 
+```
