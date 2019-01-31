@@ -20,6 +20,8 @@ __Findings__:
 ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+
 labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
 
+From this plot, we can see that more people around the age ranges of 25-50 exercise than not. We can also see that over the age of 35-40, the amount of people who both do and do not exercise decreases. 
+
 __Recomendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large amount of people, particuarly around the ages of 30-45, who do not exersice. From this finding, we recomend for docters and general practitioners to focus on individuals within that age range in order to increase the number of people who exersice. 
 
 ## General Health and Gender (James)
@@ -39,4 +41,6 @@ ggplot(data=cdc,aes(x=hlthplan,y=genhlth))+
 I used the geom_count() function to plot the genhlth and hlthplan variables. I chose to use this plot because the data only contained 10 unique options (hlthplan, although represented numerically, only had two responses). By grouping the same points together, one can better see the relationship between an assessment of general health and whether or not an individual has a health plan or not. 
 
 To better represent this data, I found a way to both aesthetically mark the ammount of individuals represented in a data point by color and size. I also renamed the legend to better label the data. 
+
+The overall finding I was able to see from this graph is that on average, there are more people who have a health plan than who do not and those people have an overall better general than those who do not.
 ```
