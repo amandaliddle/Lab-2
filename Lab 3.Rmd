@@ -26,7 +26,10 @@ __Conclusion__: From this plot, we can conclude that while most people do exerci
 
 __Recomendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase the number of people who exercise. 
 
-## General Health and Gender (James)
+## Height, Weight, and Gender(James)
+![James' Plot](Plot/height_vs_weight.png)
+
+Because height and weight are both continuous variables, I used the smooth geom. This allowed me to see the clear relationship between height and weight, and how the slope varies as a function of weight. Some noticeable features are that the height for both men and women tend to approach an asymptote. I believe that this is best explained by the fact that humans reach a peak in their height, but can continue to put on weight. 
 
 ## Weight,  Weight Desire, and Gender(Amanda)
 ![Amanda's Plot](Desktop/R_Data_Science/Amanda's Plot.png)
