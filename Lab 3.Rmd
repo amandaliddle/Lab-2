@@ -12,24 +12,18 @@ library(tidyverse)
 ## Team Question
 __Overall Question__: What are the differences between different ages and genders in the amount of exercise per month?
 
-<<<<<<< HEAD
+
 __Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than 
                                           the older ones (see Chris's graph). In order to better prepare all generations for a healthier life, we first need to see 
                                           the differences between different ages' exercise habits. This will help us make recommendations to both parents of 
                                           children and health care providers to help increase the overall health of all people. We also want to see the differences
                                           between genders in terms of exercise habits and health, as different genders have different body types and therefore
                                           do not benefit from the same kinds of exercise in the same way.
-=======
+
 __Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healthier life, we first need to see the differences between different ages' exercise habits. This will help us make recommendations to both parents of children and health care providers to help increase the overall health of all people.
 Findings:
-<<<<<<< HEAD
-=======
-```{r setup, include=FALSE}
+
 ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
-```
->>>>>>> master
-Recomendations:
->>>>>>> master
 
 __Findings__:
 ![Our Group Plot](Plot/age_vs_exercise.png)
@@ -59,7 +53,7 @@ __Recommendations__: From this graph, we can see, on average, people of all ages
                                           However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. 
                                           From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase
                                            the number of people who exercise. 
->>>>>>> master
+
 
 ## Height, Weight, and Gender(James)
 ![James' Plot](Plot/height_vs_weight.png)
