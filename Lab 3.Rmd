@@ -130,4 +130,6 @@ those people have an overall better general than those who do not.
 ## Team Contributions
 
 We all spent time working with the graphing capabilities of R and each created our own plot that supports the overarching question of the lab. 
-We all posted our parts to the shared document and wrote summaries/descriptions to go with our data. 
+We all posted our parts to the shared document and wrote summaries/descriptions to go with our data. Anna, Chris, and James worked through 
+plotting the team graph, and Amanda and Anna wrote in an analysis, conclusion, and recommendations for the findings. Amanda then edited the 
+final document and did the finishing touches to turning it in. 
