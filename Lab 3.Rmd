@@ -66,7 +66,7 @@ This allowed me to see the clear relationship between height and weight, and how
   the slope decreases some.  
 
 ## Weight,  Weight Desire, and Gender(Amanda)
-![Amanda's Plot](Users/amandaliddle4/Library/Mobile Documents/com~apple~CloudDocs/Data Science/Lab-2/Plot/Amanda’s Plot.png) 
+![Amanda's Plot](Plot/Amanda’s Plot.png) 
 
 
 ggplot(data=cdc, mapping = aes(x=gender, y=weight-wtdesire, color = gender)) + geom_boxplot() +
