@@ -20,39 +20,32 @@ __Why it is important__: There are many generational differences between people.
                                           between genders in terms of exercise habits and health, as different genders have different body types and therefore
                                           do not benefit from the same kinds of exercise in the same way.
 
-__Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healthier life, we first need to see the differences between different ages' exercise habits. This will help us make recommendations to both parents of children and health care providers to help increase the overall health of all people.
-Findings:
 
-ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
 
-__Findings__:
+
 ![Our Group Plot](Plot/age_vs_exercise.png)
 
 ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+
 labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
 
-<<<<<<< HEAD
-In this plot, we can see that more people around the age range of 25-50 exercise than not. 
+
+__Findings__: In this plot, we can see that more people around the age range of 25-50 exercise than not. 
 We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases. 
 In addition, we have color coded by gender to see how exercise patterns may differ between males and females, and both groups ended up
 following similar patterns to how their exercise happens change by age. 
 =======
 In this plot, we can see that more people around the age range of 25-50 exercise than not. We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases.  
->>>>>>> master
+
 
 __Conclusion__: From this plot, we can conclude that while most people do exercise, the largest group of people who do not exercise is 
                            between ages 35-40. Furthermore, gender does not largely affect exercise habits as people age.
 
-<<<<<<< HEAD
+
 __Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. 
                                         However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. 
                                         From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range 
                                         in order to increase the number of people who exercise. 
-=======
-__Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. 
-                                          However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. 
-                                          From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase
-                                           the number of people who exercise. 
+
 
 
 ## Height, Weight, and Gender(James)
@@ -66,7 +59,7 @@ This allowed me to see the clear relationship between height and weight, and how
   the slope decreases some.  
 
 ## Weight,  Weight Desire, and Gender(Amanda)
-![Amanda's Plot](Users/amandaliddle4/Library/Mobile Documents/com~apple~CloudDocs/Data Science/Lab-2/Plot/Amanda’s Plot.png) 
+![Amanda's Plot](/Users/amandaliddle4/Desktop/amandaplot.png) 
 
 
 ggplot(data=cdc, mapping = aes(x=gender, y=weight-wtdesire, color = gender)) + geom_boxplot() +
