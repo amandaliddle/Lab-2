@@ -56,6 +56,22 @@ I used the boxplot geom to create two separate boxplots--one for each gender, an
 
 ## Smoke and Age (Chris)
 
+![Chris' Plot](Plot/Chris' Plot.png)
+
+## Anna can you copy and paste my code here please? thank youuuu (:)
+
+I created a plot showing how age and smoking are related and how this is segmented by gender. 
+The data showed a few things: first that there were a lot more females than males in the sampled population and 
+second that there were larger groups of people who smoked in the age range of about 35-50. 
+It also showed that a much larger proportion of the age group of 60-75 were smokers. 
+Finally, it showed that those over the age of 80 were primarily non-smokers. 
+I used the geom_dotplot function and adjusted the color of the points to reflect the gender of the person behind 
+the point in question. In addition, I adjusted the size of the points in the dotplot to be significantly smaller to handle
+ the bulk of data; the default size was much too large. I also changed the default labels to make the plot easier 
+ to read.
+
+
+
 ## General Health and Health Plan (Anna)
 ![Anna's Plot](Plot/Anna's Plot.png) 
 
