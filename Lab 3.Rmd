@@ -12,7 +12,12 @@ library(tidyverse)
 ## Team Question
 __Overall Question__: What are the differences between different ages and genders in the amount of exercise per month?
 
-__Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than the older ones (see Chris's graph). In order to better prepare all generations for a healthier life, we first need to see the differences between different ages' exercise habits. This will help us make recommendations to both parents of children and health care providers to help increase the overall health of all people.
+__Why it is important__: There are many generational differences between people. Even now we see younger generations smoking less than 
+                                          the older ones (see Chris's graph). In order to better prepare all generations for a healthier life, we first need to see 
+                                          the differences between different ages' exercise habits. This will help us make recommendations to both parents of 
+                                          children and health care providers to help increase the overall health of all people. We also want to see the differences
+                                          between genders in terms of exercise habits and health, as different genders have different body types and therefore
+                                          do not benefit from the same kinds of exercise in the same way.
 
 __Findings__:
 ![Our Group Plot](Plot/age_vs_exercise.png)
@@ -20,11 +25,18 @@ __Findings__:
 ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+
 labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
 
-In this plot, we can see that more people around the age range of 25-50 exercise than not. We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases. 
+In this plot, we can see that more people around the age range of 25-50 exercise than not. 
+We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases. 
+In addition, we have color coded by gender to see how exercise patterns may differ between males and females, and both groups ended up
+following similar patterns to how their exercise happens change by age. 
 
-__Conclusion__: From this plot, we can conclude that while most people do exercise, the largest group of people who do not exercise is between ages 35-40. 
+__Conclusion__: From this plot, we can conclude that while most people do exercise, the largest group of people who do not exercise is 
+                           between ages 35-40. Furthermore, gender does not largely affect exercise habits as people age.
 
-__Recomendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase the number of people who exercise. 
+__Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. 
+                                        However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. 
+                                        From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range 
+                                        in order to increase the number of people who exercise. 
 
 ## General Health and Gender (James)
 
@@ -43,6 +55,10 @@ I used the boxplot geom to create two separate boxplots--one for each gender, an
  The information on the graph suggests that 75% of both males and females from the study seem to be above their desired weight.
  More females tended to be farther away from their desired weight than males.
 
+ This graph helps support our overarching question because it points out how far each gender tends to be from their health goals regarding their weight.
+ It illustrates that most people from both genders weigh more than they would desire, which could play a part in how their exercise patterns work.
+
+
 ## Smoke and Age (Chris)
 
 ## General Health and Health Plan (Anna)
@@ -53,8 +69,12 @@ ggplot(data=cdc,aes(x=hlthplan,y=genhlth))+
       labs(x='Health Plan', y='General Helth', title= 'Health Plan and General    Health',color='People')+
       scale_x_continuous(breaks=c(0,1),labels=c('No','Yes'))
 
-I used the geom_count() function to plot the genhlth and hlthplan variables. I chose to use this plot because the data only contained 10 unique options (hlthplan, although represented numerically, only had two responses). By grouping the same points together, one can better see the relationship between an assessment of general health and whether or not an individual has a health plan or not. 
+I used the geom_count() function to plot the genhlth and hlthplan variables. I chose to use this plot because the data only contained 10 
+unique options (hlthplan, although represented numerically, only had two responses). By grouping the same points together, one can better 
+see the relationship between an assessment of general health and whether or not an individual has a health plan or not. 
 
-To better represent this data, I found a way to both aesthetically mark the amount of individuals represented in a data point by color and size. I also renamed the legend to better label the data. 
+To better represent this data, I found a way to both aesthetically mark the amount of individuals represented in a data point by color and size. 
+I also renamed the legend to better label the data. 
 
-The overall finding I was able to see from this graph is that on average, there are more people who have a health plan than who do not and those people have an overall better general than those who do not.
+The overall finding I was able to see from this graph is that on average, there are more people who have a health plan than who do not and 
+those people have an overall better general than those who do not.
