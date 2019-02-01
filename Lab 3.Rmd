@@ -24,7 +24,20 @@ __Recomendations__: From this graph, we can see, on average, people of all ages 
 
 ## General Health and Gender (James)
 
-## Weight and Weight Desire (Amanda)
+## Weight,  Weight Desire, and Gender(Amanda)
+![Amanda's Plot](Desktop/R_Data_Science/Amanda's Plot.png)
+
+
+ggplot(data=cdc, mapping = aes(x=gender, y=weight-wtdesire, color = gender)) + geom_boxplot() +
+ labs(x='Gender', y= 'Pounds Above Desired Weight', title = 'Distance to Desired Weight Based on Gender') + 
+ coord_flip()
+
+I used the boxplot geom to create two separate boxplots--one for each gender, and I looked at how far people tend to be from
+ Itheir desired weight. The x-axis is represented by weight minus desired weight, so positive numbers indicate that a person is above their 
+ desired weight. I also switched the coordinates of the boxplot so it would be easier to read, in addition to the label function in order to give
+ the graph a title and labels on both axes. 
+ The information on the graph suggests that 75% of both males and females from the study seem to be above their desired weight.
+ More females tended to be farther away from their desired weight than males.
 
 ## Smoke and Age (Chris)
 
