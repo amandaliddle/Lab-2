@@ -55,13 +55,21 @@ __Recommendations__: From this graph, we can see, on average, people of all ages
                                         From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range 
                                         in order to increase the number of people who exercise. 
 =======
-__Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase the number of people who exercise. 
+__Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. 
+                                          However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. 
+                                          From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase
+                                           the number of people who exercise. 
 >>>>>>> master
 
 ## Height, Weight, and Gender(James)
 ![James' Plot](Plot/height_vs_weight.png)
 
-Because height and weight are both continuous variables, I used the smooth geom. This allowed me to see the clear relationship between height and weight, and how the slope varies as a function of weight. Some noticeable features are that the height for both men and women tend to approach an asymptote. I believe that this is best explained by the fact that humans reach a peak in their height, but can continue to put on weight. One other interesting aspect is how the slope varies. Initially, for both men and women, the slope is steep, but as weight increases, the slope decreases some.  
+Because height and weight are both continuous variables, I used the smooth geom. 
+This allowed me to see the clear relationship between height and weight, and how the slope varies as a function of weight.
+ Some noticeable features are that the height for both men and women tend to approach an asymptote.
+  I believe that this is best explained by the fact that humans reach a peak in their height, but can continue to put on weight. 
+  One other interesting aspect is how the slope varies. Initially, for both men and women, the slope is steep, but as weight increases, 
+  the slope decreases some.  
 
 ## Weight,  Weight Desire, and Gender(Amanda)
 ![Amanda's Plot](Plot/Amanda's Plot.png)
@@ -117,3 +125,9 @@ I also renamed the legend to better label the data.
 
 The overall finding I was able to see from this graph is that on average, there are more people who have a health plan than who do not and 
 those people have an overall better general than those who do not.
+
+
+## Team Contributions
+
+We all spent time working with the graphing capabilities of R and each created our own plot that supports the overarching question of the lab. 
+We all posted our parts to the shared document and wrote summaries/descriptions to go with our data. 
