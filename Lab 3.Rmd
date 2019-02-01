@@ -20,19 +20,19 @@ __Findings__:
 ggplot(data=cdc,aes(x=age,color=gender))+geom_area(stat="bin")+facet_wrap(~exerany)+
 labs(x='Age',y='Count of People',title='Exercise and Age (0 = No exercise, 1 = Exercise)')
 
-In this plot, we can see that more people around the age range of 25-50 exercise than not. We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases. 
+In this plot, we can see that more people around the age range of 25-50 exercise than not. We can also see that over the age of 35-40, the number of people who both do and do not exercise decreases.  
 
 __Conclusion__: From this plot, we can conclude that while most people do exercise, the largest group of people who do not exercise is between ages 35-40. 
 
-__Recomendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase the number of people who exercise. 
+__Recommendations__: From this graph, we can see, on average, people of all ages exercice more than they do not. However, there are still a large number of people, particularly around the ages of 30-45, who do not exercise. From this finding, we recommend for doctors and general practitioners to focus on individuals within that age range in order to increase the number of people who exercise. 
 
 ## Height, Weight, and Gender(James)
 ![James' Plot](Plot/height_vs_weight.png)
 
-Because height and weight are both continuous variables, I used the smooth geom. This allowed me to see the clear relationship between height and weight, and how the slope varies as a function of weight. Some noticeable features are that the height for both men and women tend to approach an asymptote. I believe that this is best explained by the fact that humans reach a peak in their height, but can continue to put on weight. 
+Because height and weight are both continuous variables, I used the smooth geom. This allowed me to see the clear relationship between height and weight, and how the slope varies as a function of weight. Some noticeable features are that the height for both men and women tend to approach an asymptote. I believe that this is best explained by the fact that humans reach a peak in their height, but can continue to put on weight. One other interesting aspect is how the slope varies. Initially, for both men and women, the slope is steep, but as weight increases, the slope decreases some.  
 
 ## Weight,  Weight Desire, and Gender(Amanda)
-![Amanda's Plot](Desktop/R_Data_Science/Amanda's Plot.png)
+![Amanda's Plot](Plot/Amanda's Plot.png)
 
 
 ggplot(data=cdc, mapping = aes(x=gender, y=weight-wtdesire, color = gender)) + geom_boxplot() +
