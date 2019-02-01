@@ -58,7 +58,7 @@ I used the boxplot geom to create two separate boxplots--one for each gender, an
 
 ![Chris' Plot](Plot/Chris' Plot.png)
 
-## Anna can you copy and paste my code here please? thank youuuu (:)
+ ggplot(data = cdc, aes(x = smoke100, y = age , color = gender))+ geom_dotplot(binaxis = "y" , stackdir = "center", binwidth = 1/20) + labs(x ='Do they smoke?', y = 'age', title = 'Age correlation to smoking')
 
 I created a plot showing how age and smoking are related and how this is segmented by gender. 
 The data showed a few things: first that there were a lot more females than males in the sampled population and 
